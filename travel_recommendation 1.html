@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelReco</title>
+    <link rel="stylesheet" href="travel_recommendation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
+        section {
+            padding: 60px 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://w7.pngwing.com/pngs/937/344/png-transparent-logo-travel-agent-travel-blue-logo-world-travel-thumbnail.png" alt="Logo">
+            <span>TravelReco</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Enter a destination or keyword">
+            <button onclick="search()">Search</button>
+            <button onclick="clearSearch()">Clear</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div id="results"></div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="hero-content">
+            <h1>Explore the World</h1>
+            <p>
+                Discover new destinations, cultures, and unforgettable experiences.
+                TravelReco helps you find the best places to visit around the globe.
+            </p>
+            <button class="book-btn">Book Now</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            Welcome to TravelReco! We are dedicated to helping travelers explore new destinations 
+            and experience unique adventures around the world.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@travelreco.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Address: 123 Travel Street, Wanderlust City</p>
+    </section>
+
+</body>
+</html>
